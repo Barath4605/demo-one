@@ -2,7 +2,7 @@ import ImageSrc from "../../assets/bg-homepage.png";
 import BackgroundImage from "./bg-img";
 import NavLinks from "./navigation-links";
 
-const SiteHeader = () => {
+const HomePage = () => {
   return (
     <>
       <BackgroundImage ImageUrl={ImageSrc} />
@@ -25,4 +25,4 @@ const SiteHeader = () => {
   );
 };
 
-export default SiteHeader;
+export default HomePage;

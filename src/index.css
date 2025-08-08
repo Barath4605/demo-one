@@ -111,8 +111,27 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+.scrollbar-custom::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  border-radius: 10px;
+}
+
 .font-bodoni {
   font-family: "Bodoni Moda SC", serif;
+}
+
+.font-vt323 {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .font-montserrat {
@@ -121,12 +140,6 @@
 
 .font-inter {
   font-family: "Inter", sans-serif;
-}
-
-.press-start-2p-regular {
-  font-family: "Press Start 2P", system-ui;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .font-playfair {
@@ -141,6 +154,7 @@
   position: relative;
   display: inline-block;
 }
+
 .link-underline-animate::after {
   content: attr(data-tip);
   position: absolute;
@@ -151,13 +165,15 @@
   font-size: 0.9rem;
   font-weight: 350;
   white-space: nowrap;
-  color: rgba(255, 255, 255, 0.744);
+  color: white;
   background-color: whitesmoke;
   opacity: 1.2;
   pointer-events: none;
   transform: scaleY(0);
+  transform-origin: left;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .link-underline-animate:hover::after {
   transform: scaleX(1);
 }
