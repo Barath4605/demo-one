@@ -30,12 +30,12 @@ const links = [
 
 const NavLinks = () => {
   return (
-    <nav className="text-white m-auto flex flex-col justify-start mt-10 font-lato">
+    <nav className="text-white/80 m-auto flex flex-col justify-start mt-10 font-lato">
       <ul>
         {links.map(({ text, tip, path }, i) => (
           <li key={i} className="mt-1.5 text-xl font-medium">
             <Link
-              className="link-underline-animate hover:-translate-y-1 transition-all ease-in-out duration-500 py-2"
+              className="link-underline-animate font-medium font-lato hover:-translate-y-1 hover:text-white transition-all ease-in-out duration-500 py-2"
               data-tip={tip}
               to={path}
             >
