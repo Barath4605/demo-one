@@ -11,8 +11,8 @@ const DetailSection = () => {
         <AlbumCover imageUrl={ImageUrl} albumName="First Album" />
         <div className="flex flex-col justify-between h-64 gap-2 p-1">
           <AlbumDetails
-            albumName="First Album"
-            artistName="Barath"
+            albumName="WASTELAND"
+            artistName="Brent Faiyaz"
             albumYear={2005}
           />
 

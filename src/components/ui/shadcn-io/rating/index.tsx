@@ -114,8 +114,8 @@ export const RatingButton = ({
         className: cn(
           "transition-colors duration-500",
           isActive
-            ? "fill-red-500 stroke-red-500 drop-shadow-[0_0_6px_rgba(239,68,68,0.8)] scale:130"
-            : "fill-red-400/60 stroke-red-400/10 text-gray-400 scale:130",
+            ? "fill-red-500 stroke-red-500 drop-shadow-[0_0_6px_rgba(239,68,68,0.8)]"
+            : "fill-white/50 stroke-white/10 text-gray-400",
           !readOnly &&
             "cursor-pointer hover:fill-red-500 hover:stroke-red-500 hover:drop-shadow-[0_0_6px_rgba(239,68,68,0.4)] scale:130"
         ),

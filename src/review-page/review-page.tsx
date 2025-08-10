@@ -4,6 +4,7 @@ import BackgroundImage from "../components/ui/bg-img";
 import DetailSection from "./detail-sec.tsx";
 
 import SearchBar from "./search-bar.tsx";
+import Tracklist from "./tracklist.tsx";
 
 const ReviewPage = () => {
   return (
@@ -12,6 +13,7 @@ const ReviewPage = () => {
       <CommonHeader />
       <SearchBar />
       <DetailSection />
+      <Tracklist />
     </>
   );
 };
